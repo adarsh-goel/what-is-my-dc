@@ -2,7 +2,7 @@
 
 🤖 A Bot To Find Telegram DC ID
 
----
+--- 
 
 ```
 Made with Python3
