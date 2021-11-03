@@ -4,7 +4,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from config import Config
  
 Telegram = Client(
-    "DC Tracker Bot",
+    "DC checker Bot",
     bot_token = os.environ["BOT_TOKEN"],
     api_id = int(os.environ["API_ID"]),
     api_hash = os.environ["API_HASH"]
@@ -21,7 +21,7 @@ async def start(bot, update):
         quote=True
     )
 
-START_TEXT = """🎸 Your Telegram DC Is : `{}`"""
+START_TEXT = """🎸 Your Telegram DC Is : `{}`    (c)@adarshgoel"""
 START_BUTTON = InlineKeyboardMarkup(
              [[
              InlineKeyboardButton('♻️ Updates Channel ♻️', url=f"https://telegram.me/{Config.UPDATE_CHANNEL}")
